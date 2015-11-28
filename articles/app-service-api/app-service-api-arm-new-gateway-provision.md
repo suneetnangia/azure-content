@@ -141,6 +141,14 @@ A link is defined between the hosting web app and the gateway. The app settings 
             {
               "name": "WEBSITE_START_SCM_ON_SITE_CREATION",
               "value": "1"
+            },
+            {
+              "name": "MS_AadClientID",
+              "value": "47b9e7f9-ca5b-4e6b-87d3-61716a4a300e"
+            },
+            {
+              "name": "MS_AadTenants",
+              "value": "clefinda.com"
             }
           ]
         }
@@ -292,7 +300,8 @@ Notice that the names of the hosting web app and gateway are defined as properti
         },
         "gateway": {
           "resourceName": "[parameters('gatewayName')]"
-        }
+        },
+        "accessLevel": "PublicAuthenticated"
       }
     }
 
